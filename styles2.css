@@ -15,6 +15,7 @@ header {
     position: relative;
 
     z-index: 1;
+    
 
 }
 
@@ -22,26 +23,7 @@ header {
 
 .intro {
     position: relative;
-    height: 300px;
-
-}
-
-.intro img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    z-index: -1;
-
-}
-
-.intro {
-    position: relative;
-    height: 300px;
-
-    margin-bottom: 0;
+    height: 1000px;
 
 }
 
@@ -53,7 +35,9 @@ header {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+
 }
+
 
 .intro h1,
 .intro p {
@@ -199,15 +183,16 @@ footer {
 .logo {
     position: absolute;
     z-index: 6;
-    width: 50px;
-    height:60px;
+    top:3px;
+    left:3px;
+    width: 60px;
+    height: 75px;
     padding: 9px;
     margin-left: 0%;
-    background-color: rgba(17, 24, 39, 0.6);
+    background-color: rgba(231, 235, 244, 0.3);
     overflow: hidden;
     border-radius: 4px ;
 
-    
   }
   
   .logo img {
