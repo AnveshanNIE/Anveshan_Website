@@ -10,8 +10,11 @@
 
 <body>
     <header>
-        <div class="logo"  >
+        <div class="clg-logo"  >
             <img src="images/Collegelogo.png" alt="college logo">
+        </div>
+        <div class="club-logo"  >
+            <img src="images/Clublogo.png" alt="college logo">
         </div>
         <div class="intro" >
             <img src="images/background.png" alt="ANVESHAN Club Logo">
@@ -66,8 +69,8 @@
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
-            <p>Project Name :Identification and Detection of Leaf Miner, Pests Infestation in Cucurbitaceae Family in Real Time Infield Scenarios using YOLOv5s Object Detection Model
-                Description : In the realm of precision agriculture, this study introduces a YOLOv5s-based model that achieves impressive F1 scores and mAP. The model’s strength lies in its ability to simultaneously detect various disease occurrences across different leaves in wax gourd plants. Operating in real-time infield conditions, it targets pests and leaf miner infections at various growth stages. The extensive and diverse dataset ensures robustness and generalizability, making it a valuable computer vision tool for precision agriculture</p>
+            <p>Project Name :<br>Identification and Detection of Leaf Miner, Pests Infestation in Cucurbitaceae Family in Real Time Infield Scenarios using YOLOv5s Object Detection Model
+                <br><br>Description : <br>In the realm of precision agriculture, this study introduces a YOLOv5s-based model that achieves impressive F1 scores and mAP. The model’s strength lies in its ability to simultaneously detect various disease occurrences across different leaves in wax gourd plants. Operating in real-time infield conditions, it targets pests and leaf miner infections at various growth stages. The extensive and diverse dataset ensures robustness and generalizability, making it a valuable computer vision tool for precision agriculture</p>
         </div>
     </section>
 
@@ -96,7 +99,9 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="script.js">
+        document.getElementsByClassName("clg-logo").addEventListener("click", redirectToNewPage);
+    </script>
 </body>
 
 </html>
