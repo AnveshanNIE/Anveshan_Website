@@ -1,0 +1,198 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #3f51b5, #2196f3);
+
+    padding: 1px 1px;
+
+    text-align: center;
+    position: relative;
+
+    z-index: 1000;
+
+}
+
+
+
+.intro {
+    position: relative;
+    height: 300px;
+
+}
+
+.intro img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+.intro {
+    position: relative;
+    height: 300px;
+
+    margin-bottom: 0;
+
+}
+
+.intro img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.intro h1,
+.intro p {
+    margin-top: 0;
+
+}
+
+.intro {
+    position: relative;
+    height: 300px;
+    /* Adjust this value to match the height of the introduction section */
+    overflow: hidden;
+    /* Ensure that the child elements do not overflow */
+    background-image: url('background.jpg');
+    /* Background image */
+    background-size: cover;
+    /* Ensure the background image covers the entire container */
+    background-position: center;
+    /* Center the background image */
+}
+
+.intro .intro-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    /* Ensure content spans entire width */
+    color: #f2f2f2;
+    /* Text color */
+}
+
+.intro h1,
+.intro p {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Blurry black background */
+    padding: 10px;
+    margin: 0;
+    /* Remove default margin */
+}
+
+nav {
+    background: rgba(17, 24, 39, 0.9);
+    /* Semi-transparent blue-black background */
+    backdrop-filter: blur(10px);
+    /* Apply blur effect */
+    padding: 10px 20px;
+    /* Padding for the navigation links */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Add shadow for depth */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background color */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* Center align the navigation links */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    /* Text color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    /* Smooth transition for text color */
+}
+
+nav ul li a:hover {
+    color: #f2f2f2;
+    /* Text color on hover */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: justify;
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #e0e0e0;
+
+}
+
+h1,
+h2 {
+    font-weight: bold;
+    color: #f2f2f2;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    padding: 10px;
+
+    display: block;
+
+}
+
+.head_des {
+    font-weight: bold;
+    color: #f2f2f2;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    padding: 10px;
+
+    display: block;
+
+
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.images img {
+    margin: 0 10px;
+    max-width: 200px;
+}
+
+footer {
+    background: linear-gradient(135deg, #102434, #0c0e1e);
+
+    color: #fff;
+
+    text-align: center;
+    padding: 20px;
+}
