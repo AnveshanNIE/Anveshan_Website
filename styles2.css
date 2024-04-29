@@ -4,6 +4,13 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+    overflow:scroll;
+}
+
+body::-webkit-scrollbar {
+    width: 0; /* Safari and Chrome */
 }
 
 header {
@@ -23,7 +30,7 @@ header {
 
 .intro {
     position: relative;
-    height: 1000px;
+    height: 900px;
 
 }
 
