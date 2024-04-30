@@ -1,54 +1,158 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
-    /* Light gray */
+    background-color: #f8f9fa;
     color: #333;
     margin: 0;
     padding: 0;
+
+}
+
+.container {
+    overflow: hidden;
 }
 
 header {
-    background: linear-gradient(135deg, #3f51b5, #2196f3);
-    /* Gradient from indigo to blue */
-    padding: 100px 20px;
-    /* Increased padding for the intro section */
+    background: transparent;
+    padding: 1px 1px;
     text-align: center;
     position: relative;
-    /* Required for the sticky behavior */
-    z-index: 1000;
-    /* Ensure the navbar is above other content */
+    z-index: 1;
+
+
 }
 
-nav {
-    background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-    position: sticky;
+
+
+
+.intro img {
+    position: absolute;
     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+
 }
+
+
+.intro h1 {
+    font-size: 40px;
+}
+
+.intro p {
+    font-size: 20px;
+
+}
+
+.intro {
+    position: relative;
+    height: 600px;
+    position: relative;
+
+
+    overflow: hidden;
+
+    background-image: url('background.jpg');
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+.intro .intro-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+
+    color: #f2f2f2;
+
+}
+
+.intro h1,
+.intro p {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    padding: 10px;
+    margin: 0;
+
+}
+
+
+
+nav {
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0.16);
+    padding: 20px 0;
+    position: absolute;
+
+    top: 33.8em;
+    ;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+}
+
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 20px;
+
+    transition: color 0.3s ease;
+
+}
+
+
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-align: center;
+    border-radius: 10px;
+
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline-block;
+    margin-right: 70px;
+
 }
 
 nav ul li a {
-    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fffdfd;
     text-decoration: none;
-    transition: color 0.3s ease;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+
 }
 
 nav ul li a:hover {
-    color: #555;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
 }
 
+nav ul li a span {
+    transition: color 0.3s ease;
+}
+
+
 .container {
-    max-width: 960px;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -56,13 +160,36 @@ section {
     padding: 50px 20px;
     text-align: justify;
     background-color: #ffffff;
-    /* White */
+
+    border-bottom: 1px solid #e0e0e0;
+
 }
 
 h1,
 h2 {
     font-weight: bold;
-    color: #333;
+    color: #f2f2f2;
+
+    background-color: rgba(90, 86, 86, 0.577);
+    border-radius: 10px;
+
+    padding: 10px;
+
+    display: block;
+
+}
+
+.head_des {
+    font-weight: bold;
+    color: #f2f2f2;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    padding: 10px;
+
+    display: block;
+
+
 }
 
 .images {
@@ -76,29 +203,87 @@ h2 {
     max-width: 200px;
 }
 
-.intro {
-    position: relative;
-    height: 300px;
-    /* Adjust this value to match the height of the introduction section */
-}
-
-.intro img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    /* Ensure the image stays behind the text */
-}
-
 footer {
-    background: linear-gradient(135deg, #2196f3, #3f51b5);
-    /* Gradient from blue to indigo */
+    background: linear-gradient(135deg, #102434, #0c0e1e);
+
     color: #fff;
-    /* White text */
+
     text-align: center;
     padding: 20px;
 }
+
+.clg-logo {
+    position: absolute;
+    z-index: 6;
+    top: 10px;
+    left: 5px;
+    width: 60px;
+    height: 75px;
+    padding: 9px;
+    margin-left: 0%;
+    background-color: rgba(231, 235, 244, 0.3);
+    overflow: hidden;
+    border-radius: 4px;
+
+}
+
+
+.clg-logo img {
+    align-content: left;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+
+.club-logo {
+    position: absolute;
+    z-index: 6;
+    top: 10px;
+    right: 5px;
+    width: 60px;
+    height: 75px;
+    padding: 9px;
+    margin-left: 0%;
+    background-color: rgba(231, 235, 244, 0.3);
+    overflow: hidden;
+    border-radius: 4px;
+
+}
+
+.club-logo img {
+    align-content: right;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* for scroll bar*/
+/* Hide the default scrollbar */
+body::-webkit-scrollbar {
+    width: 10px;
+    /* Set the width of the scrollbar */
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Set the background color of the scrollbar track */
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Set the color of the scrollbar handle */
+    border-radius: 5px;
+    /* Set the border radius of the scrollbar handle */
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Set the color of the scrollbar handle on hover */
+}
+
+
 
