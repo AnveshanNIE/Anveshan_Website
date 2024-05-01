@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Club Event</title>
+  <link rel="stylesheet" href="Event.css">
+</head>
+<body>
+  <header>
+    <h1>Research Club Event</h1>
+  </header>
+  
+  
+  <section id="topic">
+    <h2>Topic: Research in <span>Topic Area</span></h2>
+    <p>Description of the topic and event.</p>
+  </section>
+  
+  <section id="speaker">
+    <h2>Speaker: <span>Speaker Name</span></h2>
+    <p>Brief bio or introduction of the speaker.</p>
+  </section>
+  
+  <section id="location">
+    <h2>Location: <span>Location Name</span></h2>
+    <p>Address and details of the location.</p>
+  </section>
+  
+  <section id="countdown">
+    <h2>Countdown to Live Event</h2>
+    <div id="countdown-timer"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Research Club</p>
+  </footer>
+
+  <script src="countdown.js"></script>
+  <script>
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
