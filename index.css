@@ -1,7 +1,7 @@
 body {
     font-family: "PT Sans Caption", sans-serif;
-    background-color: rgb(0, 0, 0);
-    color: #333;
+    background-color: rgb(248, 242, 242);
+    color: #2e2d2d;
     margin: 0;
     padding: 0;
 
@@ -48,6 +48,7 @@ header {
 .intro {
     position: relative;
     height: 600px;
+    width: 100%;
     position: relative;
 
 
@@ -149,26 +150,29 @@ nav ul li a:hover {
 nav ul li a span {
     transition: color 0.3s ease;
 }
+
 /* The slideshow container */
 .slideshow-container {
-    top:10px;
-    width:50%; 
-    height:500px;
+    top: 10px;
+    width: 50%;
+    height: 480px;
     position: relative;
     margin: auto;
     overflow: hidden;
     border-radius: 5px;
 }
 
-.updates h1{
-    width:100%;
-    text-align: center;
-    
+.updates h1 {
+    width: 1450px;
+    text-align: left;
+    background-color: #0e1234;
+
+
 }
 
-.slideshow-container img{
-    width:100%;
-    height:500px;
+.slideshow-container img {
+    width: 100%;
+    height: 500px;
 }
 
 
@@ -179,7 +183,8 @@ nav ul li a span {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
     width: auto;
     cursor: pointer;
     position: absolute;
@@ -197,12 +202,13 @@ nav ul li a span {
 
 /* Position the "next button" to the right */
 .next {
-    right:0;
+    right: 0;
     border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -239,7 +245,8 @@ nav ul li a span {
     transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
     background-color: #717171;
 }
 
@@ -314,7 +321,7 @@ footer {
 }
 
 .clg-logo img :hover {
-    cursor:pointer; 
+    cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -368,5 +375,3 @@ body::-webkit-scrollbar-thumb:hover {
     background: #555;
     /* Set the color of the scrollbar handle on hover */
 }
-
-

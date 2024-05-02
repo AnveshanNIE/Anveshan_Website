@@ -1,203 +1,205 @@
 /* Mentors.css */
 :root {
-    --body-color: #010c15;
-    --text-color: #7e8294;
-    --hover-color: #ebd9ff;
-    --accent-color: #0101fa;
-    --underline-thickness: 3px;
-  
-    color-scheme: dark;
-  }
+  --body-color: #010c15;
+  --text-color: #dfdfdf;
+  --hover-color: #ebd9ff;
+  --accent-color: #0101fa;
+  --underline-thickness: 3px;
+
+  color-scheme: dark;
+}
 
 body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
+  background-color: #fff;
 }
 
 header {
-    display: grid;
-    overflow: hidden;
-    place-content: center;
-    background-color: var(--body-color);
-    padding: 10px 0;
-    text-align: center;
-    height:60px;
+  display: grid;
+  overflow: hidden;
+  place-content: center;
+  background-color: var(--body-color);
+  padding: 10px 0;
+  text-align: center;
+  height: 60px;
 }
 
 .club-logo {
-    position: absolute;
-    padding: 2px;
-    left:3px;
-    top:3px;
-    width: 90px;
-    height:90px;
-    overflow: hidden;
-    border-radius: 100px;
-    z-index: 10;
+  position: absolute;
+  padding: 2px;
+  left: 3px;
+  top: 3px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 100px;
+  z-index: 10;
 
 }
 
 
 .club-logo img {
-    width: 100%;
-    height: 100%;
-    z-index: 10;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
 
 .club-logo img :hover {
-    cursor:pointer; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 
 
 nav {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content:center;
-    text-transform: uppercase;
-    font: bold 1.5rem sans-serif;
-  
-    & a {
-      color: var(--text-color);
-      cursor: pointer;
-      overflow: hidden;
-      margin-left:50px;
-      transition: 0.3s;
-      position: relative;
-      text-decoration: none;
-      padding: 0 0.5em 0.25em;
-  
-      &::before {
-        content: "";
-        scale: 0 1;
-        position: absolute;
-        background: var(--accent-color);
-        transition: 0.3s, translate 0s 0.3s;
-        inset: calc(100% - var(--underline-thickness)) 0 0 0;
-      }
-  
-      &:hover {
-        color: var(--hover-color);
-  
-        &::before {
-          translate: 0;
-          transition: 0.3s;
-        }
-      }
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font: bold 1.5rem sans-serif;
+
+  & a {
+    color: var(--text-color);
+    cursor: pointer;
+    overflow: hidden;
+    margin-left: 50px;
+    transition: 0.3s;
+    position: relative;
+    text-decoration: none;
+    padding: 0 0.5em 0.25em;
+
+    &::before {
+      content: "";
+      scale: 0 1;
+      position: absolute;
+      background: var(--accent-color);
+      transition: 0.3s, translate 0s 0.3s;
+      inset: calc(100% - var(--underline-thickness)) 0 0 0;
     }
-  
+
     &:hover {
-      & a::before {
-        scale: 1;
-      }
-  
-      & a:has(~ a:hover)::before {
-        translate: 100% 0;
-        transition: 0.2s 0.2s, scale 0s 0.4s;
-      }
-  
-      & a:hover ~ a::before {
-        translate: -100% 0;
-        transition: 0.2s 0.2s, scale 0s 0.4s;
+      color: var(--hover-color);
+
+      &::before {
+        translate: 0;
+        transition: 0.3s;
       }
     }
   }
 
+  &:hover {
+    & a::before {
+      scale: 1;
+    }
+
+    & a:has(~ a:hover)::before {
+      translate: 100% 0;
+      transition: 0.2s 0.2s, scale 0s 0.4s;
+    }
+
+    & a:hover~a::before {
+      translate: -100% 0;
+      transition: 0.2s 0.2s, scale 0s 0.4s;
+    }
+  }
+}
+
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 90%;
-    margin: 10px auto;
-    background-color: rgba(153, 153, 153, 0.397);
-    padding: 10px;
-    border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 90%;
+  margin: 10px auto;
+  background-color: rgba(77, 76, 76, 0.397);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .container h1 {
-    font-size: 40px;
-    padding: 10px;
-    width: 100%;
-    text-align: center;
+  font-size: 40px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 .mentor,
 .mentor_data {
-    background-color: rgba(90, 106, 126, 0.214);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px;
+  background-color: rgba(90, 106, 126, 0.214);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
 }
 
 .mentor {
-    width: 25%;
-    text-align: center;
+  width: 25%;
+  text-align: center;
 }
 
 .mentor_data {
-    width: 60%; /* Adjust width for margin */
-    height:fit-content;
+  width: 60%;
+  /* Adjust width for margin */
+  height: fit-content;
 }
 
 .mentor_data p {
-    font-size: 16px;
-    text-align: left;
+  font-size: 16px;
+  text-align: left;
 }
 
 .mentor h2 {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .mentor p {
-    font-size: 15px;
-    font-weight: bold;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .mentor img {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
-    padding: 2px;
-    
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+  padding: 2px;
+
 }
 
 
-.mentor img :hover{
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
-    padding: 2px;
-    opacity: 0.2;
-    
+.mentor img :hover {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+  padding: 2px;
+  opacity: 0.2;
+
 }
 
 
 
 
 footer {
-    background-color: #000000;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .social-media {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .social-media a {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .social-media img {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
-
