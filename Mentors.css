@@ -179,27 +179,32 @@ nav {
 }
 
 
-
-
-footer {
-  background-color: #000000;
-  color: #fff;
-  text-align: center;
-  padding: 15px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
 .social-media {
+  margin-bottom: 10px;
   margin-bottom: 10px;
 }
 
 .social-media a {
+  margin-right: 10px;
   margin-right: 10px;
 }
 
 .social-media img {
   width: 30px;
   height: 30px;
+  width: 30px;
+  height: 30px;
 }
+
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+

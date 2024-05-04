@@ -1,57 +1,338 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
+:root {
+  --body-color: #010c15;
+  --text-color: #7e8294;
+  --hover-color: #ebd9ff;
+  --accent-color: #0101fa;
+  --underline-thickness: 3px;
+
+  color-scheme: dark;
+}
+
+
+header {
+  display: grid;
+  overflow: hidden;
+  place-content: center;
+  background-color: var(--body-color);
+  padding: 10px 0;
+  text-align: center;
+  height:60px;
+}
+
+.club-logo {
+  position: absolute;
+  padding: 2px;
+  left:3px;
+  top:3px;
+  width: 90px;
+  height:90px;
+  overflow: hidden;
+  border-radius: 100px;
+  z-index: 10;
+
+}
+
+
+.club-logo img {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.club-logo img :hover {
+  cursor:pointer; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content:center;
+  text-transform: uppercase;
+  font: bold 1.5rem sans-serif;
+
+  & a {
+    color: var(--text-color);
+    cursor: pointer;
+    overflow: hidden;
+    margin-left:50px;
+    transition: 0.3s;
+    position: relative;
     text-decoration: none;
+    padding: 0 0.5em 0.25em;
+
+    &::before {
+      content: "";
+      scale: 0 1;
+      position: absolute;
+      background: var(--accent-color);
+      transition: 0.3s, translate 0s 0.3s;
+      inset: calc(100% - var(--underline-thickness)) 0 0 0;
+    }
+
+    &:hover {
+      color: var(--hover-color);
+
+      &::before {
+        translate: 0;
+        transition: 0.3s;
+      }
+    }
   }
-  
-  section {
-    padding: 20px;
+
+  &:hover {
+    & a::before {
+      scale: 1;
+    }
+
+    & a:has(~ a:hover)::before {
+      translate: 100% 0;
+      transition: 0.2s 0.2s, scale 0s 0.4s;
+    }
+
+    & a:hover ~ a::before {
+      translate: -100% 0;
+      transition: 0.2s 0.2s, scale 0s 0.4s;
+    }
   }
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(98, 98, 98);
+  color: rgba(0, 0, 0, 1);
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 90%;
+  margin: 5px auto;
+  background-color: rgba(153, 153, 153, 0.397);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.container h1 {
+  font-size: 40px;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.speaker,
+.speaker_data {
+  background-color: rgba(90, 106, 126, 0.214);
+  padding: 5px;
+  border-radius: 10px;
+  margin: 1px;
+}
+
+.speaker {
+  width: 25%;
+  text-align: center;
+}
+
+.speaker_data {
+  width: 60%; /* Adjust width for margin */
+  height:fit-content;
+}
+
+.speaker_data p {
+  font-size: 16px;
+  text-align: left;
+}
+
+.speaker h2 {
+  font-size: 25px;
+}
+
+.speaker p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.speaker img {
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  padding: 2px;
+  border-radius: 5px;
+  opacity: 0.7;
   
-  section h2 {
-    color: #333;
-  }
+}
+
+
+.speaker img :hover{
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+  padding: 2px;
+  opacity: 0.2;
   
-  section h2 span {
-    color: #666;
-  }
+}
+
+
+.social-media {
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  margin-right: 10px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+
+.time-blocks {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle farthest-corner at 150px 150px, #000000 60%, #000000 50%);
+  border-radius: 10px;
+}
+
+.side-text{
+  position: absolute;
+  bottom:-30px;
+  left:0px;
+  transform: rotate(270deg);
+  transform-origin: 0 0;
+  font-weight: 500;
+  font-size: 25px;
+  color: #667977;
+}
+.time-text{
+  font-weight:500;
+  transform:scaleY(1.8);
+  font-size: 45px;
+  color: rgb(2, 51, 250);
+}
+
+
+
+
+.location {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 90%;
+  margin: 5px auto;
+  background-color: rgba(153, 153, 153, 0.397);
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
   
-  footer {
-    background-color: #333;
+}
+
+.location h2{
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.019);
+  border-radius: 5px;
+}
+
+.location h2 p {
+  margin-bottom: 10px;
+  font-size: 15px;
+  width:900px;
+}
+
+
+
+.location iframe {
+  width: 90%; /* Make the iframe responsive */
+  height: 400px; /* Set the desired height */
+  border: none; /* Remove border */
+  border-radius: 10px; /* Optional: Add border radius for a card-like effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a card-like effect */
+  margin-bottom: 30px;
+}
+
+
+
+
+
+.topic {
+  padding: 10px;
+  text-align: center;
+  width:80%;
+  margin-left:140px;
+  
+}
+
+.topic h3 {
+  background-color: rgba(181, 181, 184, 0.187);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 5px;
+  font-size: 50px;
+}
+
+.topic h2{
+  background-color: rgba(181, 181, 184, 0.187);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 5px;
+  font-size: 40px;
+
+}
+
+.topic p{
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: left;
+}
+
+
+.container h1,
+.location h2 {
+  position: relative;
+  display: inline-block;
+}
+
+.container h1::before,
+.location h2::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.container h1:hover::before,
+.location h2:hover::before {
+  transform: scaleX(1);
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #000000;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
     bottom: 0;
     width: 100%;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-  
+    padding: 20px 0;
+}

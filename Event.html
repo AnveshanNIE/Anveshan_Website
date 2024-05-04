@@ -8,39 +8,63 @@
 </head>
 <body>
   <header>
-    <h1>Research Club Event</h1>
+      <div class="club-logo">
+          <img src="images/ClubLogoLabel.png" alt="club logo">
+      </div>
+      <nav>
+              <a href="Home.html">Home</a>
+              <a href="#">About</a>
+              <a href="Event.html">Events</a>
+              <a href="Mentors.html">Mentors</a>
+              <a href="#">Contact</a>
+      </nav>
   </header>
+  <div class="topic">
+    <h3>Event Starts in ...</h3>
+    <div class="time-blocks">
+      <div class="block"><span class="side-text"></span><span class="time-text" id = "days">12</span></div><h1>DAYS</h1>
+      <div class="block"><span class="side-text"></span><span class="time-text" id = "hours">5</span></div><h1>HOURS</h1>
+      <div class="block"><span class="side-text"></span><span class="time-text" id = "minutes">42</span></div><h1>MINUTES</h1>
+      <div class="block"><span class="side-text"></span><span class="time-text" id = "seconds">42</span></div><h1>SECONDS</h1>
+    </div>
+    <h2>Topic: Research in <span>AI&ML in Industry</span></h2>
+    <p>Experienced Researcher with a Doctor of Philosophy (PhD) from National University of Singapore, with a broad experience working in systems such as cloud-native architecture as well as NLP/ML projects. Apart from contributing extensively to design, development of solutions, have also extensively generated intellectual property through nearly 40 patents (inclusive of both granted and pending), 7 papers and open-source contributions to cloud-native support tools in the Konveyor community. </p>
+  </div>
+
   
   
-  <section id="topic">
-    <h2>Topic: Research in <span>Topic Area</span></h2>
-    <p>Description of the topic and event.</p>
-  </section>
+  <div class="container">
+      <h1>Meet Our Speaker</h1>
+      <div class="speaker">
+          <a href="https://www.linkedin.com/in/padmanabha%2Dvenkatagiri%2Ds%2Da0865426/"><img src="./images/Speaker.png" alt="Speaker image 1"></a>
+          <h2>DR. Padmanabha Venkatagiri S</h2>
+          <p>Expert in Research Development</p>
+          <div class="social-media">
+          <a href="https://www.linkedin.com/in/padmanabha%2Dvenkatagiri%2Ds%2Da0865426/"><img src="./images/Mentor/LinkedIn.png" alt="Facebook"></a>
+          <a href="#"><img src="./images/Mentor/Instagram.png" alt="Twitter"></a>
+          <a href="#"><img src="./images/Mentor/X.png" alt="Instagram"></a>
+          </div>
+        </div>
+      <div class="speaker_data">
+        <p>Experienced Researcher with a Doctor of Philosophy (PhD) from National University of Singapore, with a broad experience working in systems such as cloud-native architecture as well as NLP/ML projects. Apart from contributing extensively to design, development of solutions, have also extensively generated intellectual property through nearly 40 patents (inclusive of both granted and pending), 7 papers and open-source contributions to cloud-native support tools in the Konveyor community. </p>
+      </div>
+  </div>
   
-  <section id="speaker">
-    <h2>Speaker: <span>Speaker Name</span></h2>
-    <p>Brief bio or introduction of the speaker.</p>
-  </section>
+  <div class="location">
+    <h2>Location<p>M.V. Hall , GJB block ,The National Institute Of Engineering [South Campus] , Mananthavadi road ,<br> Mysore - 570008</p></h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d643.0140929682324!2d76.64088858758207!3d12.281503369357536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf6557e0c5950f%3A0x204cedf9d31f789e!2sNIE%20Golden%20Jubilee%20Block!5e0!3m2!1sen!2sin!4v1714842303997!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
   
-  <section id="location">
-    <h2>Location: <span>Location Name</span></h2>
-    <p>Address and details of the location.</p>
-  </section>
-  
-  <section id="countdown">
-    <h2>Countdown to Live Event</h2>
-    <div id="countdown-timer"></div>
-  </section>
 
   <footer>
-    <p>&copy; 2024 Research Club</p>
-  </footer>
+    <div class="social-media">
+        <a href="#"><img src="./images/Mentor/LinkedIn.png" alt="Facebook" class="MentorPhoto"></a>
+        <a href="#"><img src="./images/Mentor/Instagram.png" alt="Twitter"></a>
+        <a href="#"><img src="./images/Mentor/X.png" alt="Instagram"></a>
+    </div>
+    <p>&copy; 2024 ANVESHAN . All rights reserved.</p>
+</footer>
 
-  <script src="countdown.js"></script>
-  <script>
-    function scrollToSection(sectionId) {
-      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
+  <script src="Event.js"></script>
 </body>
 </html>
