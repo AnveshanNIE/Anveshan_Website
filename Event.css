@@ -1,7 +1,7 @@
 :root {
   --body-color: #010c15;
-  --text-color: #7e8294;
-  --hover-color: #ebd9ff;
+  --text-color: #ffffff;
+  --hover-color: #ffffff;
   --accent-color: #0101fa;
   --underline-thickness: 3px;
 
@@ -51,7 +51,7 @@ nav {
   padding: 0;
   display: flex;
   justify-content:center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font: bold 1.5rem sans-serif;
 
   & a {
