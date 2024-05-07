@@ -1,0 +1,191 @@
+/* Mentors.css */
+:root {
+    --body-color: #011f38;
+    --text-color: #ffffff;
+    --hover-color: #ffffff;
+    --accent-color: #0101fa;
+    --underline-thickness: 3px;
+  
+    color-scheme: dark;
+  }
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    background-color: #dbdbdb;
+}
+
+header {
+    display: grid;
+    overflow: hidden;
+    place-content: center;
+    background-color: var(--body-color);
+    padding: 10px 0;
+    text-align: center;
+    height:60px;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+    text-transform: capitalize;
+    font: bold 1.5rem sans-serif;
+  
+    & a {
+      color: var(--text-color);
+      cursor: pointer;
+      overflow: hidden;
+      margin-left:50px;
+      transition: 0.3s;
+      position: relative;
+      text-decoration: none;
+      padding: 0 0.5em 0.25em;
+  
+      &::before {
+        content: "";
+        scale: 0 1;
+        position: absolute;
+        background: var(--accent-color);
+        transition: 0.3s, translate 0s 0.3s;
+        inset: calc(100% - var(--underline-thickness)) 0 0 0;
+      }
+  
+      &:hover {
+        color: var(--hover-color);
+  
+        &::before {
+          translate: 0;
+          transition: 0.3s;
+        }
+      }
+    }
+  
+    &:hover {
+      & a::before {
+        scale: 1;
+      }
+  
+      & a:has(~ a:hover)::before {
+        translate: 100% 0;
+        transition: 0.2s 0.2s, scale 0s 0.4s;
+      }
+  
+      & a:hover ~ a::before {
+        translate: -100% 0;
+        transition: 0.2s 0.2s, scale 0s 0.4s;
+      }
+    }
+  }
+
+
+/* .image-container{
+    height: 240px;
+    width: 240px;
+    margin: 0px 0px 0px 0px ;
+}
+
+.image-container img{
+    height: 100%;
+    width: 100%;
+    margin: 0px 0px 0px 0px ;
+    object-fit: cover;
+} */
+
+
+.club-logo {
+    position: absolute;
+    z-index: 0;
+    top: 10px;
+    left: 5px;
+    width: 720px;
+    height: 390px;
+    padding: 9px;
+    margin-left: 0%;
+    background-color: rgba(231, 235, 244, 0.0);
+    overflow: hidden;
+    border-radius: 4px;
+
+}
+
+
+.club-logo img {
+    align-content: left;
+    width: 100%;
+    margin-left:-30px;
+    height: 100%;
+    margin-top:-170px;
+    z-index: 10;
+    border-radius: -10px;
+    background-color: rgba(231, 235, 244, 0.0);
+    padding:4px;
+
+}
+
+.hover-div {
+  width:85%;
+  margin-left:110px;
+  margin-bottom: 20px; /* Adds some space between each hover-div */
+  padding: 10px; /* Adds padding inside the hover-div */
+  background-color: #043a70; /* Background color */
+  border-radius: 10px; /* Rounded corners */
+  opacity:0.7;
+}
+
+/* Styles for the hover-div paragraph */
+.hover-div p {
+  margin-top: 0; /* Removes default top margin */
+  text-indent: 2em; /* Adds indentation to paragraphs */
+  line-height: 1.5; /* Increases line spacing for better readability */
+  font-size: 18px;
+}
+
+/* Styles for the hover-div heading */
+.hover-div h2 {
+  margin-top: 0; /* Removes default top margin */
+  color: #ffffff; /* Heading color */
+}
+
+/* Styles for bold text within the hover-div */
+.hover-div b {
+  font-weight: bold; /* Sets bold font weight */
+  font-size: 25px;
+}
+
+.club_photo{
+  width:85.6%;
+  margin-top:10px;
+  margin-left:115px;
+  margin-bottom:10px;
+  border-radius: 5px;
+
+}
+
+
+
+.social-media {
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  margin-right: 10px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+
+footer {
+    background-color: #011f38;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+}
