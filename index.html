@@ -28,7 +28,6 @@
                 <li><a href="Mentors.html">Mentors</a></li>
                 <li><a href="Event.html">Events</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#blogs">Blogs</a></li>
                 <li><a href="#register">Register</a></li>
             </ul>
         </nav>
@@ -72,7 +71,7 @@
 
 
 
-    <section id="mentors">
+    <!-- <section id="mentors">
         <div class="container">
             <h2>Mentors</h2>
             <p>Information about mentors goes here.</p>
@@ -82,9 +81,9 @@
 
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section id="activities">
+    <!-- <section id="activities">
         <div class="container">
             <h2>Activities</h2>
             <p>The Anveshan club is a dynamic student organization at our college. Our mission is to harness the power
@@ -92,7 +91,7 @@
                 research skills, and explore diverse interests. Through creativity and knowledge, we aim to make a
                 positive impact by creating solutions that improve lives and drive positive change.</p>
         </div>
-    </section>
+    </section> -->
 
     <section id="projects">
         <div class="container">
@@ -110,23 +109,46 @@
     </section>
 
     <section id="blogs">
-        <div class="container">
-            <h2>Blogs</h2>
-            <p>Recent blog posts go here.</p>
+        <h1>Blogs</h1>
+        <div class="blog-carousel">
+            <div class="blog-item" onclick="showBlog(1)">
+                <img src="images/img1.jpg" alt="Blog 1">
+                <h3>Blog Title 1</h3>
+                <p>Description of Blog 1</p>
+            </div>
+            <div class="blog-item" onclick="showBlog(2)">
+                <img src="images/img1.jpg" alt="Blog 2">
+                <h3>Blog Title 2</h3>
+                <p>Description of Blog 2</p>
+            </div>
+            <!-- Add more blog items as needed -->
         </div>
+
+        <div id="blog-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div id="blog-content"></div>
+            </div>
+        </div>
+
     </section>
 
-    <section id="register">
+    <!-- <section id="register">
         <div class="container">
             <h2>Register for the Club</h2>
-            <p>Fill out the form below to join our club.</p>
-            <!-- Include your Google Form here -->
+            <p>Fill out the form below to join our club.</p> -->
+    <!-- Include your Google Form here
         </div>
-    </section>
+    </section> -->
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 ANVESHAN CLUB. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#"><img src="./images/Mentor/LinkedIn.png" alt="Facebook" class="MentorPhoto"></a>
+                <a href="#"><img src="./images/Mentor/Instagram.png" alt="Twitter"></a>
+                <a href="#"><img src="./images/Mentor/X.png" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2024 ANVESHAN . All rights reserved.</p>
         </div>
     </footer>
 

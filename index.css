@@ -1,7 +1,7 @@
 body {
     font-family: "PT Sans Caption", sans-serif;
-    background-color: rgb(0, 0, 0);
-    color: #333;
+    background-color: rgb(202, 198, 198);
+    color: #252424;
     margin: 0;
     padding: 0;
 
@@ -149,26 +149,27 @@ nav ul li a:hover {
 nav ul li a span {
     transition: color 0.3s ease;
 }
+
 /* The slideshow container */
 .slideshow-container {
-    top:10px;
-    width:50%; 
-    height:500px;
+    top: 10px;
+    width: 50%;
+    height: 500px;
     position: relative;
     margin: auto;
     overflow: hidden;
     border-radius: 5px;
 }
 
-.updates h1{
-    width:100%;
-    text-align: center;
-    
+.updates h1 {
+    width: 100%;
+    /* text-align: center; */
+
 }
 
-.slideshow-container img{
-    width:100%;
-    height:500px;
+.slideshow-container img {
+    width: 100%;
+    height: 500px;
 }
 
 
@@ -179,7 +180,8 @@ nav ul li a span {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
     width: auto;
     cursor: pointer;
     position: absolute;
@@ -197,12 +199,13 @@ nav ul li a span {
 
 /* Position the "next button" to the right */
 .next {
-    right:0;
+    right: 0;
     border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -239,7 +242,8 @@ nav ul li a span {
     transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
     background-color: #717171;
 }
 
@@ -248,7 +252,7 @@ h2 {
     font-weight: bold;
     color: #f2f2f2;
 
-    background-color: rgba(90, 86, 86, 0.577);
+    background-color: rgb(5, 1, 57);
     border-radius: 10px;
 
     padding: 10px;
@@ -314,7 +318,7 @@ footer {
 }
 
 .clg-logo img :hover {
-    cursor:pointer; 
+    cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -370,3 +374,70 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+.blog-carousel {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+    -ms-overflow-style: none;
+    /* Hide scrollbar for IE and Edge */
+}
+
+.blog-item {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.blog-item img {
+    width: 100%;
+    height: auto;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    overflow-y: auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
