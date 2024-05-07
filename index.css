@@ -318,11 +318,11 @@ footer {
 .club-logo {
     position: absolute;
     z-index: 6;
-    top: 10px;
-    right: 5px;
-    width: 60px;
+    top: 15px;
+    right: 15px;
+    width: 65px;
     height: 75px;
-    padding: 9px;
+    padding: 7px;
     margin-right: 0%;
     background-color: rgba(231, 235, 244, 0.0);
     overflow: hidden;
@@ -331,13 +331,16 @@ footer {
 }
 
 .club-logo img {
-    align-content: center;
-    width: 120%;
-    height: 110%;
+    object-fit: fill;
+    width: 220%;
+    margin-left: -42px;
+    margin-top: -33px;
+    height:180%;
     z-index: 10;
-    background-color: rgba(231, 235, 244, 0.25);
+    background-color: rgba(139, 140, 141, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.751);
     border-radius: 4px;
-    padding:2px;
+    padding:4px;
 }
 
 
