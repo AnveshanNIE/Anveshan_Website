@@ -4,7 +4,7 @@ function redirectToCollege() {
 }
 
 
-var Time = 5000;
+var Time = 50000;
 var slideIndex = 0;
 showSlides();
 
@@ -47,9 +47,8 @@ function showBlog(id) {
     var modal = document.getElementById("blog-modal");
     var content = document.getElementById("blog-content");
 
-    // Here you can load the content of the respective blog based on its id
-    // For demonstration, let's assume we have preloaded content for each blog
-    var blogContent = ""; // Content of the respective blog
+
+    var blogContent = "";
 
     content.innerHTML = blogContent;
     modal.style.display = "block";
